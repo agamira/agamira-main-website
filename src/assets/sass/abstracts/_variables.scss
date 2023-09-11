@@ -1,0 +1,50 @@
+// Main colors
+$text-white: #ffffff;
+$text-grey: #7d7d7d;
+$text-grey-dark: #424650;
+$background-blue: #070f23;
+$accent-blue: #070e43;
+$accent-blue-light: #6dc0fd;
+
+// Gradients
+$gradient-blue: linear-gradient(270deg, rgba(0, 6, 142, 0.18) 0%, #070f23 100%);
+
+$gradient-blue-light: linear-gradient(
+  278deg,
+  #36c1e1 -3.31%,
+  #39fef7 20.54%,
+  #87e1fa 71.15%,
+  #fff 110.81%
+);
+
+$gradient-purple: conic-gradient(
+  from 225deg at 50% 164.17%,
+  #331f53 0deg,
+  #4c177a 18.696360737085342deg,
+  #9001e0 59.703360199928284deg,
+  #ff005c 118.83618235588074deg,
+  #fdbc51 181.87499284744263deg,
+  #cdd2e5 247.24984645843506deg,
+  #2290ec 300.6723690032959deg,
+  #25164b 360deg
+);
+
+// Functional Colors
+
+$warning-orange: #fd8654;
+$error-red: #ff0a5b;
+$success-green: #88de60;
+$link-blue: #177ddc;
+
+// Fonts
+// $primaryFont: "Poppins", sans-serif;
+
+/* Breakpoints */
+$breakpoints: (
+  S: 390px,
+  M: 480px,
+  L: 768px,
+  XL: 1000px,
+  XXL: 1440px,
+  XXXL: 1920px,
+);
