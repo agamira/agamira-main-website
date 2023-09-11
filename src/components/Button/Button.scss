@@ -1,0 +1,158 @@
+@import "../../assets/sass/main.scss";
+
+.btn {
+  color: $text-white;
+  font-family: $font-lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  margin: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  background: $gradient-purple;
+  box-shadow: 5.75765px 5.75765px 21.59119px 11.5153px rgba(144, 1, 224, 0.2),
+    -5.75765px -5.75765px 21.59119px 0px rgba(255, 112, 44, 0.2),
+    5.75765px -5.75765px 21.59119px 0px rgba(253, 188, 81, 0.2);
+  border-radius: 14px;
+  span {
+    box-sizing: border-box;
+    border: none;
+    outline: 8px solid #302652;
+    border-radius: 6px;
+    background: $gradient-purple;
+    padding: 16px 117px;
+  }
+  &:hover {
+    color: #ffffffd6;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      conic-gradient(
+        from 225deg at 50% 164.17%,
+        #331f53 0deg,
+        #4c177a 18.696360737085342deg,
+        #9001e0 59.703360199928284deg,
+        #ff005c 118.83618235588074deg,
+        #fdbc51 181.87499284744263deg,
+        #cdd2e5 247.24984645843506deg,
+        #2290ec 300.6723690032959deg,
+        #25164b 360deg
+      );
+
+    span {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        conic-gradient(
+          from 225deg at 50% 164.17%,
+          #331f53 0deg,
+          #4c177a 18.696360737085342deg,
+          #9001e0 59.703360199928284deg,
+          #ff005c 118.83618235588074deg,
+          #fdbc51 181.87499284744263deg,
+          #cdd2e5 247.24984645843506deg,
+          #2290ec 300.6723690032959deg,
+          #25164b 360deg
+        );
+    }
+  }
+  &:focus {
+    color: #ffffffc0;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+      ),
+      conic-gradient(
+        from 225deg at 50% 164.17%,
+        #331f53 0deg,
+        #4c177a 18.696360737085342deg,
+        #9001e0 59.703360199928284deg,
+        #ff005c 118.83618235588074deg,
+        #fdbc51 181.87499284744263deg,
+        #cdd2e5 247.24984645843506deg,
+        #2290ec 300.6723690032959deg,
+        #25164b 360deg
+      );
+    span {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.3) 0%,
+          rgba(0, 0, 0, 0.3) 100%
+        ),
+        conic-gradient(
+          from 225deg at 50% 164.17%,
+          #331f53 0deg,
+          #4c177a 18.696360737085342deg,
+          #9001e0 59.703360199928284deg,
+          #ff005c 118.83618235588074deg,
+          #fdbc51 181.87499284744263deg,
+          #cdd2e5 247.24984645843506deg,
+          #2290ec 300.6723690032959deg,
+          #25164b 360deg
+        );
+    }
+  }
+  &:active {
+    color: $text-white;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      ),
+      conic-gradient(
+        from 225deg at 50% 164.17%,
+        #331f53 0deg,
+        #4c177a 18.696360737085342deg,
+        #9001e0 59.703360199928284deg,
+        #ff005c 118.83618235588074deg,
+        #fdbc51 181.87499284744263deg,
+        #cdd2e5 247.24984645843506deg,
+        #2290ec 300.6723690032959deg,
+        #25164b 360deg
+      );
+    span {
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.2) 0%,
+          rgba(255, 255, 255, 0.2) 100%
+        ),
+        conic-gradient(
+          from 225deg at 50% 164.17%,
+          #331f53 0deg,
+          #4c177a 18.696360737085342deg,
+          #9001e0 59.703360199928284deg,
+          #ff005c 118.83618235588074deg,
+          #fdbc51 181.87499284744263deg,
+          #cdd2e5 247.24984645843506deg,
+          #2290ec 300.6723690032959deg,
+          #25164b 360deg
+        );
+    }
+  }
+  &:disabled {
+    cursor: not-allowed;
+    color: $text-grey-dark;
+    background: $text-grey-dark;
+    box-shadow: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    span {
+      background: $background-blue;
+      outline: 6px solid $background-blue;
+      border: 2px solid $text-grey-dark;
+    }
+  }
+}

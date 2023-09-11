@@ -1,7 +1,11 @@
-import React from "react";
+import "./Button.scss";
 
 const Button = ({ children, ...props }) => {
-  return <button {...props}>{children}</button>;
+  return (
+    <button {...props}>
+      <span>{children}</span>
+    </button>
+  );
 };
 
 export { Button };
