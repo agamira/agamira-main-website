@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 20px; /* 125% */
-  margin: 20px;
+  margin: 0 0 20px 0;
   box-sizing: border-box;
   cursor: pointer;
   border: none;
@@ -154,5 +154,18 @@
       outline: 6px solid $background-blue;
       border: 2px solid $text-grey-dark;
     }
+  }
+
+  &--outline {
+    border-radius: 12px;
+    border: 1px solid $text-white;
+    padding: 20px 128px;
+    color: $text-white;
+    font-family: $font-lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: transparent;
   }
 }
