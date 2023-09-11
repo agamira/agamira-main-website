@@ -4,7 +4,7 @@ import "./Home.scss";
 const Home = () => {
   return (
     <main>
-      <Button className={"btn--outline btn--arrow-right"}>Learn More</Button>
+      <Button className={"btn btn--secondary"}>Learn More</Button>
     </main>
   );
 };
