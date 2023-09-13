@@ -1,0 +1,74 @@
+@import "../../assets/sass/main.scss";
+
+header {
+  background-color: $background-blue;
+  .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 342px;
+    margin: 0 auto;
+    padding: 26px 24px 26px 24px;
+    @include mobile-large {
+      max-width: 432px;
+    }
+    @include tablet {
+      max-width: 720px;
+    }
+
+    @include tablet-large {
+      max-width: 980px;
+    }
+    .logo {
+      a {
+        height: 34px;
+        img {
+          width: 188px;
+        }
+      }
+    }
+    nav {
+      ul {
+        li {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      .register-btn {
+        display: none; ///
+        font-family: $font-lexend;
+        color: $text-gold;
+        text-decoration: none;
+      }
+
+      .login-btn {
+        display: none; ///
+        &.btn {
+          box-shadow: none;
+          span {
+            color: $text-gold;
+          }
+        }
+      }
+
+      .burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

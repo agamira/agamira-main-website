@@ -11,18 +11,36 @@
   padding-right: 10px;
   padding-top: 26px;
   padding-bottom: 26px;
-  margin: 0 0 20px 0;
+  // margin: 0 0 20px 0;
   border-radius: 14px;
   cursor: pointer;
   box-shadow: 5.75765px 5.75765px 21.59119px 11.5153px rgba(144, 1, 224, 0.2),
     -5.75765px -5.75765px 21.59119px 0px rgba(255, 112, 44, 0.2),
     5.75765px -5.75765px 21.59119px 0px rgba(253, 188, 81, 0.2);
   span {
+    width: 100%;
     box-sizing: border-box;
     border: none;
     border-radius: 6px;
-    padding: 16px 117px;
+    // padding: 16px 115px;
+    padding: 16px 114px;
   }
+
+  // &--large {
+  //   @include laptop {
+  //     font-size: 24px;
+  //     font-style: normal;
+  //     font-weight: 500;
+  //     line-height: 30px; /* 125% */
+  //     text-transform: capitalize;
+  //     padding: 40px 10px 40px 10px;
+  //     span {
+  //       outline: 9px solid #302652;
+  //       padding: 30px 60px;
+  //     }
+  //   }
+  // }
+
   &--primary {
     color: $text-white;
     background: $gradient-purple;
@@ -277,7 +295,7 @@
     cursor: pointer;
     border-radius: 12px;
     border: 1px solid $text-white;
-    padding: 19px 115px;
+    padding: 19px 112px;
     color: $text-white;
     font-family: $font-lexend;
     font-size: 16px;

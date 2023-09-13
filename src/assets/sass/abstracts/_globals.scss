@@ -1,12 +1,11 @@
 .container {
   padding: 0 24px;
-  max-width: 345px;
-  box-sizing: border-box;
+  max-width: 342px;
+  box-sizing: content-box;
   margin: 0 auto;
-  // @include mobile-large {
-  //   max-width: 345px;
-  //   padding: 0 70px;
-  // }
+  @include mobile-large {
+    padding: 0 70px;
+  }
   // @include tablet {
   // }
   // @include tablet-large {
