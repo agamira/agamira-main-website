@@ -3,66 +3,13 @@
 main {
   background-color: $background-blue;
   overflow: hidden;
-  .welcome {
-    .container {
-      padding-top: 24px;
-      padding-bottom: 39px;
-      h1 {
-        color: $text-white;
-        text-shadow: 0px 2.263399839401245px 2.263399839401245px
-          rgba(255, 255, 255, 0.25);
-        font-family: $font-appleTea;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; /* 30px */
-        letter-spacing: 4px;
-        text-transform: capitalize;
-        margin-bottom: 14px;
-      }
-      p {
-        color: $text-white;
-        font-family: $font-lexend;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px; /* 125% */
-        opacity: 0.8;
-      }
-      .mira {
-        margin-top: -24px;
-        position: relative;
-        // p {
-        //   text-shadow: 0px 1.7986161708831787px 1.7986161708831787px
-        //     rgba(255, 255, 255, 0.25);
-        //   font-family: $font-levenim;
-        //   font-size: 28.778px;
-        //   font-style: normal;
-        //   font-weight: 400;
-        //   line-height: normal;
-        //   letter-spacing: 5.756px;
-        //   text-transform: uppercase;
-        // }
-        .logo {
-          z-index: 1;
-          position: absolute;
-          top: 37px;
-          left: 41px;
-        }
-        .mira-image {
-          margin-left: 78px;
-          width: 385px;
-        }
-        .buttons {
-          margin-top: -89px;
-          display: flex;
-          gap: 20px;
-          flex-direction: column;
-        }
-      }
-    }
-  }
+
   .mission {
+    mix-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-position: -325px -110px;
+    background-size: cover;
+    background-image: url("../../assets/img/background-pattern.svg");
     .container {
       h5 {
         max-width: 250px;
@@ -79,6 +26,46 @@ main {
         line-height: normal;
         letter-spacing: 3px;
         text-transform: uppercase;
+      }
+      .box {
+        &--image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 30px;
+        }
+        &--text {
+          text-align: end;
+          h3 {
+            color: $text-green;
+            font-family: $font-lexend;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 125% */
+          }
+          h2 {
+            color: $text-white;
+            font-family: $font-lexend;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: capitalize;
+          }
+          p {
+            color: $text-white;
+            font-family: $font-lexend;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 125% */
+            opacity: 0.8;
+          }
+          .btn--outline {
+            margin-top: 20px;
+          }
+        }
       }
     }
   }

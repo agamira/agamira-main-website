@@ -1,0 +1,67 @@
+@import "../../../assets/sass/main.scss";
+
+.mission {
+  mix-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: -325px -110px;
+  background-size: cover;
+  background-image: url("../../../assets/img/background-pattern.svg");
+  .container {
+    h5 {
+      max-width: 250px;
+      color: $text-white;
+      margin-top: 47px;
+      margin-bottom: 55px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-family: $font-levenim;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .box {
+      &--image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      &--text {
+        text-align: end;
+        h3 {
+          color: $text-green;
+          font-family: $font-lexend;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px; /* 125% */
+        }
+        h2 {
+          color: $text-white;
+          font-family: $font-lexend;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+        p {
+          color: $text-white;
+          font-family: $font-lexend;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px; /* 125% */
+          opacity: 0.8;
+        }
+        .btn--outline {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
