@@ -1,6 +1,6 @@
 import "./MissionSection.scss";
 import { Button } from "../../../components";
-import cube from "../../../assets/img/cube-cube.png";
+import cube from "../../../assets/img/cube-cube2.png";
 
 const MissionSection = () => {
   return (
@@ -24,7 +24,9 @@ const MissionSection = () => {
             <Button className={"btn--outline"}>More About Us</Button>
           </div>
           <div className="box--image">
-            <img src={cube} alt="" />
+            <div>
+              <img src={cube} alt="" />
+            </div>
           </div>
         </div>
       </div>

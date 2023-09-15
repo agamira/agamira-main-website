@@ -1,5 +1,16 @@
 @import "../../../assets/sass/main.scss";
 
 .guide {
-    
+  padding-top: 40px;
+  .container {
+    .text {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .row {
+      margin-top: 20px;
+    }
+  }
 }
