@@ -15,7 +15,7 @@ const WelcomeSection = () => {
         <div className="mira">
           <div className="box">
             <img className="logo" src={logo} alt="" />
-            <p>AGAMIRA</p>
+            <span>AGAMIRA</span>
             <img className="mira-image" src={mira} alt="" />
           </div>
           <div className="buttons">

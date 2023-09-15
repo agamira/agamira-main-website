@@ -1,6 +1,6 @@
 import "./Header.scss";
 import burgerBtn from "../../assets/icons/burger-menu.svg";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/Polygon3.png";
 import { Link } from "react-router-dom";
 import { Button } from "../../components";
 
@@ -10,7 +10,10 @@ const Header = () => {
       <div className="box">
         <div className="logo">
           <Link to={"/"}>
-            <img src={logo} alt="" />
+            <div>
+              <img src={logo} alt="" />
+              <span>Agamira</span>
+            </div>
           </Link>
         </div>
         <nav>

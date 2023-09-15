@@ -1,0 +1,61 @@
+p {
+  color: $text-white;
+  font-family: $font-lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  opacity: 0.8;
+}
+
+h1 {
+  color: $text-white;
+  text-shadow: 0px 2.263399839401245px 2.263399839401245px
+    rgba(255, 255, 255, 0.25);
+  font-family: $font-appleTea;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+}
+
+h2 {
+  color: $text-white;
+  font-family: $font-lexend;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+h3 {
+  color: $text-green;
+  font-family: $font-lexend;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+}
+
+h4 {
+  color: $text-white;
+  font-family: $font-levenim;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h5 {
+  color: $text-white;
+  font-family: $font-lexend;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}

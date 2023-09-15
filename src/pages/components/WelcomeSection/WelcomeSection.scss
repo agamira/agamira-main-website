@@ -18,16 +18,11 @@
       margin-bottom: 14px;
     }
     p {
-      color: $text-white;
-      font-family: $font-lexend;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 20px; /* 125% */
-      opacity: 0.8;
+
     }
     .mira {
       margin-top: -24px;
+      mix-blend-mode: lighten;
       .box {
         position: relative;
         .logo {
@@ -39,7 +34,7 @@
           left: 50%;
           transform: translate(-50%, -50%);
         }
-        p {
+        span {
           margin-top: -30px;
           z-index: 1;
           position: absolute;
