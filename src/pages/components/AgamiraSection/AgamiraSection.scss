@@ -1,0 +1,49 @@
+@import "../../../assets/sass/main.scss";
+
+.agamira {
+  background-image: url("../../../assets/img/background-urban.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .box {
+    margin-top: 40px;
+    margin-left: 10px;
+    position: relative;
+    .logo {
+      margin-top: -5px;
+      max-width: 205px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    span {
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-left: 3px;
+      color: $text-gold;
+      text-shadow: 0px 1.7986161708831787px 1.7986161708831787px
+        rgba(255, 255, 255, 0.25);
+      font-family: $font-levenim;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 5.756px;
+      text-transform: uppercase;
+    }
+
+    .mira-image {
+      margin-left: 78px;
+      max-width: 385px;
+    }
+  }
+}

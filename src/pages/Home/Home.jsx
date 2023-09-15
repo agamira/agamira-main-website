@@ -4,15 +4,17 @@ import {
   MissionSection,
   GuideSection,
   BenefitsSection,
+  AgamiraSection,
 } from "../components";
 
 const Home = () => {
   return (
-    <main>
+    <main id="home">
       <WelcomeSection />
       <MissionSection />
       <GuideSection />
       <BenefitsSection />
+      <AgamiraSection />
     </main>
   );
 };
