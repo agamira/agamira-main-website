@@ -1,6 +1,7 @@
 @import "../../../assets/sass/main.scss";
 
 .welcome {
+  background-color: $background-blue;
   .container {
     padding-top: 24px;
     padding-bottom: 39px;
@@ -18,7 +19,6 @@
       margin-bottom: 14px;
     }
     p {
-
     }
     .mira {
       margin-top: -24px;

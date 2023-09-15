@@ -1,6 +1,7 @@
 @import "../../assets/sass/main.scss";
 
 .btn {
+  box-sizing: border-box;
   width: 100%;
   border: none;
   font-family: $font-lexend;
@@ -10,14 +11,15 @@
   line-height: 20px; /* 125% */
   padding-top: 27px;
   padding-bottom: 27px;
-  // margin: 0 0 20px 0;
+  padding-left: 2px;
+  padding-right: 2px;
   border-radius: 14px;
   cursor: pointer;
   box-shadow: 5.75765px 5.75765px 21.59119px 11.5153px rgba(144, 1, 224, 0.2),
     -5.75765px -5.75765px 21.59119px 0px rgba(255, 112, 44, 0.2),
     5.75765px -5.75765px 21.59119px 0px rgba(253, 188, 81, 0.2);
   span {
-    width: 100%;
+    min-width: 100%;
     box-sizing: border-box;
     border: none;
     border-radius: 6px;

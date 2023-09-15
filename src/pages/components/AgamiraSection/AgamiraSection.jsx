@@ -4,6 +4,7 @@ import logo from "../../../assets/img/Polygon3.png";
 const AgamiraSection = () => {
   return (
     <section className="agamira">
+        <div className="agamira--background"></div>
       <div className="box">
         <img className="logo" src={logo} alt="" />
         <span>AGAMIRA</span>
