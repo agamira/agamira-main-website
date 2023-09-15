@@ -1,6 +1,10 @@
 import "./Home.scss";
-import { WelcomeSection, MissionSection, GuideSection } from "../components";
-import { BenefitsSection } from "../components/BenefitsSection/BenefitsSection";
+import {
+  WelcomeSection,
+  MissionSection,
+  GuideSection,
+  BenefitsSection,
+} from "../components";
 
 const Home = () => {
   return (
