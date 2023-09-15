@@ -1,5 +1,6 @@
 import "./Home.scss";
 import { WelcomeSection, MissionSection, GuideSection } from "../components";
+import { BenefitsSection } from "../components/BenefitsSection/BenefitsSection";
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
       <WelcomeSection />
       <MissionSection />
       <GuideSection />
+      <BenefitsSection />
     </main>
   );
 };
