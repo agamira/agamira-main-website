@@ -5,6 +5,7 @@ import {
   GuideSection,
   BenefitsSection,
   AgamiraSection,
+  WhyChooseUsSection,
 } from "../components";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <GuideSection />
       <BenefitsSection />
       <AgamiraSection />
+      <WhyChooseUsSection />
     </main>
   );
 };

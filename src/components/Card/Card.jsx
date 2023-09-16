@@ -1,8 +1,8 @@
 import "./Card.scss";
 
-const Card = ({ icon, text, title }) => {
+const Card = ({ icon, text, title, ...props }) => {
   return (
-    <div className="card">
+    <div {...props} className="card">
       <div className="card-box">
         {!!icon && <div className="card-box__icon">{icon}</div>}
         {!!title && (
