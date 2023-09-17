@@ -1,0 +1,28 @@
+@import "../../../assets/sass/main.scss";
+
+.page-generator {
+  background-color: $background-blue;
+  padding-bottom: 30px;
+  .container {
+    .section-content {
+      h3 {
+        margin-bottom: 16px;
+      }
+      h2 {
+        margin-bottom: 16px;
+      }
+      p {
+        margin-bottom: 16px;
+      }
+      .btn {
+        margin-bottom: 4px;
+      }
+    }
+    .section-image {
+      img {
+        mix-blend-mode: lighten;
+        width: 100%;
+      }
+    }
+  }
+}

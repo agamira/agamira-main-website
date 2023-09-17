@@ -7,6 +7,7 @@ import {
   AgamiraSection,
   WhyChooseUsSection,
   AssistantSection,
+  PageGeneratorSection,
 } from "../components";
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <AgamiraSection />
       <WhyChooseUsSection />
       <AssistantSection />
+      <PageGeneratorSection />
     </main>
   );
 };
