@@ -24,10 +24,11 @@
     }
     &__text {
       p {
+        color: $text-grey;
+        opacity: 1;
         text-shadow: 0px 2.263399839401245px 2.263399839401245px
           rgba(255, 255, 255, 0.25);
         line-height: 24px;
-        opacity: 0.5;
       }
     }
   }

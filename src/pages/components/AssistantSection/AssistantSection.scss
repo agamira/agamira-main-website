@@ -1,0 +1,39 @@
+@import "../../../assets/sass/main.scss";
+
+.assistant {
+  padding-top: 32px;
+  padding-bottom: 30px;
+  background-color: $background-blue;
+
+  .section-info {
+    margin-bottom: 48px;
+    h3 {
+      margin-bottom: 8px;
+    }
+    h2 {
+      margin-bottom: 8px;
+    }
+    p {
+    }
+  }
+  .image-box {
+    background-image: url("../../../assets/img/Vector.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 111px;
+      margin-top: 116px;
+      margin-bottom: 111px;
+      img {
+        max-width: 246px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .btn--outline {
+    margin-bottom: 134px;
+  }
+}

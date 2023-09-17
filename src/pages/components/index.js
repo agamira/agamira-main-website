@@ -4,3 +4,4 @@ export { GuideSection } from "./GuideSection/GuideSection";
 export { BenefitsSection } from "./BenefitsSection/BenefitsSection";
 export { AgamiraSection } from "./AgamiraSection/AgamiraSection";
 export { WhyChooseUsSection } from "./WhyChooseUsSection/WhyChooseUsSection";
+export { AssistantSection } from "./AssistantSection/AssistantSection";
