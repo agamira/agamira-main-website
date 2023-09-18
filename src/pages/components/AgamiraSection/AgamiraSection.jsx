@@ -1,5 +1,5 @@
 import "./AgamiraSection.scss";
-import logo from "../../../assets/img/Polygon3.png?format=avif;webp;jpg&as=picture;webp;jpg;png&as=picture";
+import logo from "../../../assets/img/Polygon3.png?format=avif;webp;jpg&as=picture";
 import { Image } from "../../../components";
 
 const AgamiraSection = () => {
