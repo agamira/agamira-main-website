@@ -1,6 +1,6 @@
 import "./MissionSection.scss";
-import { Button } from "../../../components";
-import cube from "../../../assets/img/cube-cube2.png";
+import { Button, Image } from "../../../components";
+import cube from "../../../assets/img/cube-cube2.png?format=avif;webp;jpg&as=picture";
 
 const MissionSection = () => {
   return (
@@ -30,7 +30,7 @@ const MissionSection = () => {
             </div>
             <div className="box--image">
               <div>
-                <img src={cube} alt="" />
+                <Image source={cube} alt={"cube"} />
               </div>
             </div>
           </div>

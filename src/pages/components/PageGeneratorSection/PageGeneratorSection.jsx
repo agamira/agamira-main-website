@@ -1,6 +1,6 @@
 import "./PageGeneratorSection.scss";
-import { Button } from "../../../components";
-import cube from "../../../assets/img/cube.png";
+import { Button, Image } from "../../../components";
+import cube from "../../../assets/img/cube.png?format=avif;webp;jpg&as=picture";
 
 const PageGeneratorSection = () => {
   return (
@@ -19,7 +19,7 @@ const PageGeneratorSection = () => {
           <Button className={"btn btn--primary"}>Get Started</Button>
         </div>
         <div className="section-image">
-          <img src={cube} alt="" />
+          <Image source={cube} alt={"cube"} />
         </div>
       </div>
     </section>

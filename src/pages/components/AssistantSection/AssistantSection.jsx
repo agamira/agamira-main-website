@@ -1,6 +1,6 @@
 import "./AssistantSection.scss";
-import sphere from "../../../assets/img/sphere2.png";
-import { Button } from "../../../components";
+import sphere from "../../../assets/img/sphere2.png?format=avif;webp;jpg&as=picture";
+import { Button, Image } from "../../../components";
 
 const AssistantSection = () => {
   return (
@@ -19,7 +19,7 @@ const AssistantSection = () => {
         </div>
         <div className="image-box">
           <div className="container">
-            <img src={sphere} alt="" />
+            <Image source={sphere} />
             <Button className={"btn--outline"}>More About AI</Button>
           </div>
         </div>

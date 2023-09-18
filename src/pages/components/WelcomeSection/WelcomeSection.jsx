@@ -1,7 +1,7 @@
 import "./WelcomeSection.scss";
-import { Button } from "../../../components";
-import mira from "../../../assets/img/mira.png";
-import logo from "../../../assets/img/Polygon3.png";
+import { Button, Image } from "../../../components";
+import mira from "../../../assets/img/mira.png?format=avif;webp;jpg&as=picture";
+import logo from "../../../assets/img/Polygon3.png?format=avif;webp;jpg&as=picture";
 
 const WelcomeSection = () => {
   return (
@@ -14,9 +14,9 @@ const WelcomeSection = () => {
         </p>
         <div className="mira">
           <div className="box">
-            <img className="logo" src={logo} alt="" />
+            <Image source={logo} className={"logo"} alt={"logo"} />
             <span>AGAMIRA</span>
-            <img className="mira-image" src={mira} alt="" />
+            <Image source={mira} className={"mira-image"} alt={"mira"} />
           </div>
           <div className="buttons">
             <Button className={"btn--outline btn--arrow-right"}>

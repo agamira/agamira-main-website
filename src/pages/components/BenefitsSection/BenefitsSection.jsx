@@ -1,6 +1,6 @@
-import { Button, OrderedList } from "../../../components";
+import { Button, Image, OrderedList } from "../../../components";
 import "./BenefitsSection.scss";
-import tabletGuy from "../../../assets/img/tablet-guy.png";
+import tabletGuy from "../../../assets/img/tablet-guy.png?format=avif;webp;jpg&as=picture";
 
 const BenefitsSection = () => {
   const texts = [
@@ -26,7 +26,7 @@ const BenefitsSection = () => {
             <Button className={"btn btn--primary"}>Get Started</Button>
           </div>
           <div className="benefits-content__image">
-            <img src={tabletGuy} alt="" />
+            <Image source={tabletGuy} alt={"tablet"} />
           </div>
         </div>
       </div>
