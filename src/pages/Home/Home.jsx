@@ -9,6 +9,7 @@ import {
   AssistantSection,
   PageGeneratorSection,
   TestimonialsSection,
+  OurProductsSection,
 } from "../components";
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
       <AssistantSection />
       <PageGeneratorSection />
       <TestimonialsSection />
+      <OurProductsSection />
     </main>
   );
 };
