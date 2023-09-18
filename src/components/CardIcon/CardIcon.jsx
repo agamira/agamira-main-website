@@ -1,8 +1,8 @@
 import "./CardIcon.scss";
 
-const CardIcon = ({ logo }) => {
+const CardIcon = ({ className = "", logo }) => {
   return (
-    <div className="card-icon">
+    <div className={`card-icon ${className}`}>
       {!!logo && <img className="card-icon__logo" src={logo} alt="" />}
     </div>
   );
