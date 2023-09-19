@@ -1,21 +1,13 @@
 import "./Header.scss";
 import burgerBtn from "../../assets/icons/burger-menu.svg";
-import logo from "../../assets/img/Polygon3.png?format=avif;webp;jpg&as=picture";
 import { Link } from "react-router-dom";
-import { Button, Image } from "../../components";
+import { Button, Logo } from "../../components";
 
 const Header = () => {
   return (
     <header>
       <div className="box">
-        <div className="logo">
-          <Link to={"/"}>
-            <div>
-              <Image source={logo} alt={"logo"} />
-              <span>Agamira</span>
-            </div>
-          </Link>
-        </div>
+        <Logo />
         <nav>
           <ul>
             <li></li>

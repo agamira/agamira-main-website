@@ -21,32 +21,6 @@ header {
     @include tablet-large {
       max-width: 980px;
     }
-    .logo {
-      a {
-        color: $text-gold;
-        text-shadow: 0px 1.7986161709px 1.7986161709px rgba(255, 255, 255, 0.25);
-        font-family: $font-levenim;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 5.756px;
-        text-transform: uppercase;
-        text-decoration: none;
-        div {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          height: 34px;
-          img {
-            width: 32px;
-          }
-          span {
-            margin-top: 5px;
-          }
-        }
-      }
-    }
     nav {
       ul {
         li {
