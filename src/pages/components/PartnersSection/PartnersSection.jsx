@@ -21,22 +21,22 @@ const PartnersSection = () => {
         <div className="partners-logo">
           <ul>
             <li>
-              <img src={appStore} alt="" />
+              <img src={appStore} alt="App Store" />
             </li>
             <li>
-              <img src={apiary} alt="" />
+              <img src={apiary} alt="Apiary" />
             </li>
             <li>
-              <img src={android} alt="" />
+              <img src={android} alt="Android" />
             </li>
             <li>
-              <img src={airbnb} alt="" />
+              <img src={airbnb} alt="Airbnb" />
             </li>
             <li>
-              <img src={ibm} alt="" />
+              <img src={ibm} alt="IBM" />
             </li>
             <li>
-              <img src={basecamp} alt="" />
+              <img src={basecamp} alt="Basecamp" />
             </li>
           </ul>
         </div>
