@@ -5,7 +5,6 @@ import android from "../../../assets/icons/android.svg";
 import airbnb from "../../../assets/icons/airbnb.svg";
 import ibm from "../../../assets/icons/ibm.svg";
 import basecamp from "../../../assets/icons/basecamp.svg";
-import { SubscriptionForm } from "../../../components";
 
 const PartnersSection = () => {
   return (
