@@ -31,6 +31,11 @@ $gradient-purple: conic-gradient(
   #25164b 360deg
 );
 
+// Box Shadows
+$shadow-primary: 3.80952px 3.80952px 14.28571px 7.61905px rgba(144, 1, 224, 0.2),
+  -3.80952px -3.80952px 14.28571px 0px rgba(255, 112, 44, 0.2),
+  3.80952px -3.80952px 14.28571px 0px rgba(253, 188, 81, 0.2);
+
 // Functional Colors
 
 $warning-orange: #fd8654;

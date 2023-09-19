@@ -1,0 +1,19 @@
+@import "../../assets/sass/main.scss";
+
+#subscribe-btn {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 40px;
+  background-image: $gradient-purple;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 1.33333px 4px 6.66667px 2.66667px rgba(144, 1, 224, 0.4),
+    -2.66667px -2.66667px 20px 0px rgba(255, 112, 44, 0.4),
+    -1.33333px 1.33333px 20px 0px rgba(253, 188, 81, 0.4);
+  color: $text-white;
+  font-family: $font-lexend;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
