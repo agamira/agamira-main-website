@@ -9,45 +9,25 @@
   font-style: normal;
   font-weight: 500;
   line-height: 20px; /* 125% */
-  padding-top: 27px;
-  padding-bottom: 27px;
-  padding-left: 2px;
-  padding-right: 2px;
   border-radius: 14px;
+  padding: 8px;
   cursor: pointer;
   box-shadow: 5.75765px 5.75765px 21.59119px 11.5153px rgba(144, 1, 224, 0.2),
     -5.75765px -5.75765px 21.59119px 0px rgba(255, 112, 44, 0.2),
     5.75765px -5.75765px 21.59119px 0px rgba(253, 188, 81, 0.2);
-  span {
-    min-width: 100%;
+  div {
+    width: 100%;
     box-sizing: border-box;
     border: none;
     border-radius: 6px;
-    // padding: 16px 115px;
-    padding: 16px 114px;
+    padding: 16px 0;
   }
-
-  // &--large {
-  //   @include laptop {
-  //     font-size: 24px;
-  //     font-style: normal;
-  //     font-weight: 500;
-  //     line-height: 30px; /* 125% */
-  //     text-transform: capitalize;
-  //     padding: 40px 10px 40px 10px;
-  //     span {
-  //       outline: 9px solid #302652;
-  //       padding: 30px 60px;
-  //     }
-  //   }
-  // }
 
   &--primary {
     color: $text-white;
     background: $gradient-purple;
-    span {
-      outline: 8px solid #302652;
-      background: $gradient-purple;
+    div {
+      outline: 6px solid #302652;
     }
     &:hover {
       color: #ffffffd6;
@@ -68,7 +48,7 @@
           #25164b 360deg
         );
 
-      span {
+      div {
         background: linear-gradient(
             0deg,
             rgba(0, 0, 0, 0.2) 0%,
@@ -105,7 +85,7 @@
           #2290ec 300.6723690032959deg,
           #25164b 360deg
         );
-      span {
+      div {
         background: linear-gradient(
             0deg,
             rgba(0, 0, 0, 0.3) 0%,
@@ -142,7 +122,7 @@
           #2290ec 300.6723690032959deg,
           #25164b 360deg
         );
-      span {
+      div {
         background: linear-gradient(
             0deg,
             rgba(255, 255, 255, 0.2) 0%,
@@ -166,11 +146,7 @@
       color: $text-grey-dark;
       background: $text-grey-dark;
       box-shadow: none;
-      padding-left: 8px;
-      padding-right: 8px;
-      padding-top: 26px;
-      padding-bottom: 26px;
-      span {
+      div {
         background: $background-blue;
         outline: 6px solid $background-blue;
         border: 2px solid $text-grey-dark;
@@ -181,8 +157,8 @@
   &--secondary {
     color: $background-blue;
     background: $gradient-blue-light;
-    span {
-      outline: 8px solid #302652;
+    div {
+      outline: 6px solid #302652;
       background: $gradient-blue-light;
     }
     &:hover {
@@ -201,7 +177,7 @@
           #fff 110.81%
         );
 
-      span {
+      div {
         background: linear-gradient(
             0deg,
             rgba(0, 0, 0, 0.2) 0%,
@@ -231,7 +207,7 @@
           #fff 110.81%
         );
 
-      span {
+      div {
         background: linear-gradient(
             0deg,
             rgba(0, 0, 0, 0.4) 0%,
@@ -260,7 +236,7 @@
           #87e1fa 71.15%,
           #fff 110.81%
         );
-      span {
+      div {
         background: linear-gradient(
             0deg,
             rgba(255, 255, 255, 0.2) 0%,
@@ -280,11 +256,7 @@
       color: $text-grey-dark;
       background: $text-grey-dark;
       box-shadow: none;
-      padding-left: 8px;
-      padding-right: 8px;
-      padding-top: 26px;
-      padding-bottom: 26px;
-      span {
+      div {
         background: $background-blue;
         outline: 6px solid $background-blue;
         border: 2px solid $text-grey-dark;
@@ -297,7 +269,7 @@
     width: 100%;
     border-radius: 12px;
     border: 1px solid $text-white;
-    padding: 19px 110px;
+    padding: 19px 0px;
     color: $text-white;
     font-family: $font-lexend;
     font-size: 16px;
@@ -324,7 +296,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    span {
+    div {
       position: relative;
       &:after {
         margin-left: 8px;
@@ -338,7 +310,7 @@
 
     &:hover {
       color: $accent-blue-light;
-      span {
+      div {
         &:after {
           content: url("../../assets/icons/btn-arrow/arrow-right-blue.svg");
         }
@@ -346,7 +318,7 @@
     }
 
     &:active {
-      span {
+      div {
         &:after {
           content: url("../../assets/icons/btn-arrow/arrow-right-blue.svg");
         }
@@ -354,7 +326,7 @@
     }
 
     &:focus {
-      span {
+      div {
         &:after {
           content: url("../../assets/icons/btn-arrow/arrow-right-blue.svg");
         }
@@ -364,7 +336,7 @@
     &:disabled {
       color: $text-grey-dark;
       border: 1px solid $text-grey-dark;
-      span {
+      div {
         &:after {
           content: url("../../assets/icons/btn-arrow/arrow-right-grey.svg");
         }
