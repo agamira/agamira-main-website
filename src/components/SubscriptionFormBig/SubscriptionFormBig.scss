@@ -1,0 +1,51 @@
+@import "../../assets/sass/main.scss";
+
+#subscription-form-big {
+  box-sizing: border-box;
+  .form-inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 16px;
+    border-radius: 12px;
+    border: 1px solid #6dc0fd;
+    background: $gradient-blue;
+    background-color: #070e43;
+
+    label {
+      color: $text-white;
+      font-family: $font-lexend;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    .email-input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px;
+      background-color: $background-blue;
+      border-radius: 0px;
+      outline: none;
+      cursor: pointer;
+      border: 1px solid $accent-blue-light;
+      margin-bottom: 8px;
+      //
+      caret-color: $accent-blue-light;
+      color: $text-white;
+      font-family: $font-lexend;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      &::placeholder {
+        color: $background-blue;
+        font-family: $font-lexend;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}

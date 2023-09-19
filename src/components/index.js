@@ -7,3 +7,4 @@ export { OrderedList } from "./OrderedList/OrderedList";
 export { Image } from "./Image/Image";
 export { SubscribeButton } from "./SubscribeButton/SubscribeButton";
 export { SubscriptionForm } from "./SubscriptionForm/SubscriptionForm";
+export { SubscriptionFormBig } from "./SubscriptionFormBig/SubscriptionFormBig";
