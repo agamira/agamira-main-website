@@ -8,4 +8,5 @@ export { AssistantSection } from "./AssistantSection/AssistantSection";
 export { PageGeneratorSection } from "./PageGeneratorSection/PageGeneratorSection";
 export { TestimonialsSection } from "./TestimonialsSection/TestimonialsSection";
 export { OurProductsSection } from "./OurProductsSection/OurProductsSection";
+export { StartNowSection } from "./StartNowSection/StartNowSection";
 export { PartnersSection } from "./PartnersSection/PartnersSection";

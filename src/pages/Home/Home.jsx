@@ -10,6 +10,7 @@ import {
   PageGeneratorSection,
   TestimonialsSection,
   OurProductsSection,
+  StartNowSection,
   PartnersSection,
 } from "../components";
 
@@ -26,6 +27,7 @@ const Home = () => {
       <PageGeneratorSection />
       <TestimonialsSection />
       <OurProductsSection />
+      <StartNowSection />
       <PartnersSection />
     </main>
   );
