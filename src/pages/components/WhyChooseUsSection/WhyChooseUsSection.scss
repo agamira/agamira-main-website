@@ -18,9 +18,8 @@
     }
     .row {
       display: flex;
-      flex-direction: column;
-      max-width: 254px;
-      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
       .card {
         min-height: 294px;

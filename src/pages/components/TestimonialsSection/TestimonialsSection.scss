@@ -17,8 +17,10 @@
       .row {
         display: flex;
         flex-wrap: wrap;
-        gap: 89px;
+        row-gap: 89px;
+        column-gap: 19px;
         padding-top: 67px;
+        justify-content: center;
         .card {
           position: relative;
           min-height: 317px;
