@@ -12,6 +12,9 @@ import {
   OurProductsSection,
   StartNowSection,
   PartnersSection,
+  // FagSection,
+  // SocialMediaSection,
+  // AreYouReadySection,
 } from "../components";
 
 const Home = () => {
@@ -29,6 +32,9 @@ const Home = () => {
       <OurProductsSection />
       <StartNowSection />
       <PartnersSection />
+      {/* <FaqSection/> */}
+      {/* <SocialMediaSection/> */}
+      {/* <AreYouReadySection/> */}
     </main>
   );
 };
