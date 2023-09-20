@@ -11,6 +11,10 @@
     background-position: -325px -110px;
     background-size: cover;
     background-image: url("../../../assets/img/background-pattern.svg");
+    @include tablet {
+      background-position: center center;
+      margin: 0;
+    }
     .container {
       h4 {
         max-width: 250px;
@@ -18,8 +22,17 @@
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        @include tablet {
+          max-width: unset;
+        }
       }
       .box {
+        @include tablet {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: center;
+        }
         &--image {
           display: flex;
           justify-content: center;
@@ -28,11 +41,18 @@
             img {
               mix-blend-mode: lighten;
               max-width: 560px;
+              @include tablet {
+                max-width: 614px;
+                margin-right: -85px;
+              }
             }
           }
         }
         &--text {
           text-align: end;
+          @include tablet {
+            min-width: 350px;
+          }
           h3 {
           }
           h2 {
