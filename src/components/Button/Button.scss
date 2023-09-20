@@ -311,6 +311,9 @@
     line-height: normal;
     div {
       position: relative;
+      @include tablet {
+        width: 88%;
+      }
       &:after {
         margin-left: 8px;
         width: 25px;

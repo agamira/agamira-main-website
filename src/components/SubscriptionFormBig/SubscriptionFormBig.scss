@@ -1,6 +1,8 @@
 @import "../../assets/sass/main.scss";
 
 #subscription-form-big {
+  max-width: 381px;
+  width: 100%;
   box-sizing: border-box;
   .form-inputs {
     display: flex;
