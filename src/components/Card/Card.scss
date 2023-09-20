@@ -11,6 +11,10 @@
   border: 1px solid $accent-blue-light;
   background: $gradient-blue;
   background-color: $accent-blue;
+  @include tablet {
+    max-width: 395px;
+    min-width: 279px;
+  }
   .card-box {
     display: flex;
     flex-direction: column;

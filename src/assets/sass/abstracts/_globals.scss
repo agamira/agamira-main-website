@@ -6,9 +6,20 @@
   @include mobile-large {
     padding: 0 70px;
   }
-  // @include tablet {
-  // }
-  // @include tablet-large {
-  //   padding: 0 60px;
-  // }
+
+  @include tablet {
+    max-width: 720px;
+    padding: 0 24px;
+  }
+  @include tablet-large {
+    max-width: 880px;
+    padding: 0 60px;
+  }
+  @include laptop {
+    max-width: 1248px;
+    padding: 0 96px;
+  }
+  @include desktop {
+    max-width: 1728px;
+  }
 }

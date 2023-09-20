@@ -23,6 +23,13 @@
     padding: 16px 0;
   }
 
+  @include tablet {
+    max-width: 187px;
+    div {
+      padding: 19px 0;
+    }
+  }
+
   &--primary {
     color: $text-white;
     background: $gradient-purple;
@@ -277,6 +284,12 @@
     font-weight: 500;
     line-height: normal;
     background-color: transparent;
+
+    @include tablet {
+      padding: 21px 0px;
+      max-width: 187px;
+    }
+
     &:hover {
       color: $accent-blue-light;
       border: 1px solid $accent-blue-light;
