@@ -4,23 +4,37 @@
   padding: 24px 0;
   background-color: $background-blue;
   .container {
+    @include tablet-large {
+      padding: 0;
+    }
     .benefits-content {
       display: flex;
       flex-direction: column;
+      column-gap: 19px;
+      @include tablet-large {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+      }
       &__text {
         @include tablet {
           display: flex;
           flex-direction: column;
           align-items: center;
         }
+        @include tablet-large {
+          align-items: flex-start;
+        }
         h3 {
-          margin-left: 5px;
           margin-bottom: 12px;
         }
         h2 {
           margin-bottom: 20px;
           @include tablet {
             padding-left: 91px;
+          }
+          @include tablet-large {
+            padding-left: 0;
           }
         }
         .btn {
@@ -31,6 +45,15 @@
         img {
           mix-blend-mode: lighten;
           width: 100%;
+          max-height: 578px;
+          @include tablet-large {
+            min-width: 400px;
+            min-height: 578px;
+          }
+          @include laptop {
+            min-width: 614px;
+            min-height: 578px;
+          }
         }
       }
     }

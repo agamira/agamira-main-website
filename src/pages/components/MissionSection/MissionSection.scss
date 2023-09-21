@@ -45,6 +45,9 @@
                 max-width: 614px;
                 margin-right: -85px;
               }
+              @include tablet-large {
+                margin: 0;
+              }
             }
           }
         }
