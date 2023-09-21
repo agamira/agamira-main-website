@@ -10,13 +10,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include tablet-large {
-      max-width: unset;
-    }
-
-    @include laptop {
-      max-width: 1400px;
-    }
     .wrapper {
       width: 100%;
       @include tablet-large {
