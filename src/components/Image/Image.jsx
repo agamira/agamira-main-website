@@ -1,7 +1,7 @@
 function Image({ source, ...props }) {
   const { sources, img } = source;
   return (
-    <picture>
+    <picture style={{ height: "100%" }}>
       {Object.entries(sources).map(([type, srcMeta]) => {
         return (
           <source
