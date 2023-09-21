@@ -1,6 +1,7 @@
 @import "../../assets/sass/main.scss";
 
 header {
+  transition: width 0.5s ease-in-out;
   background-color: $background-blue;
   position: sticky;
   top: 0;
@@ -9,59 +10,137 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 26px 24px 26px 24px;
-    @include mobile-large {
-      max-width: 432px;
-    }
-    @include tablet {
-      max-width: 720px;
+    @include tablet-large {
+      max-width: unset;
     }
 
-    @include tablet-large {
-      max-width: 980px;
+    @include laptop {
+      max-width: 1400px;
     }
-    nav {
-      ul {
-        li {
+    .wrapper {
+      width: 100%;
+      @include tablet-large {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 10px;
+      }
+      .header-top {
+        padding: 26px 24px;
+        display: flex;
+        justify-content: space-between;
+        @include tablet-large {
+          padding: 26px 0px;
+        }
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        @include tablet-large {
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 30px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          column-gap: 30px;
+          width: 100%;
+          border-bottom: 0.5px solid #282d45;
+          border-top: 0.5px solid #282d45;
+          @include tablet-large {
+            flex-direction: row;
+            border: none;
+          }
+          li {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            a {
+              text-align: end !important;
+              width: 100%;
+              padding: 16px 24px;
+              color: $text-gold;
+              text-align: center;
+              font-family: $font-lexend;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px;
+              text-decoration: none;
+              border-bottom: 0.5px solid #282d45;
+              border-top: 0.5px solid #282d45;
+              @include tablet {
+                padding: 16px 0px;
+                text-align: center !important;
+              }
+              @include tablet-large {
+                border: none;
+                padding: 10px;
+                min-width: 71px;
+              }
+            }
+          }
+        }
+        .buttons {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          @include tablet-large {
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+          }
           a {
+            text-align: end;
+            padding: 16px 24px;
+            width: 100%;
+            border-bottom: 1px solid #282d45 !important;
+            @include tablet {
+              padding: 16px 0px;
+              text-align: center !important;
+              border: none;
+            }
+            @include tablet-large {
+              border: none !important;
+              padding: 10px;
+              min-width: 71px;
+            }
+          }
+          .register-btn {
+            font-family: $font-lexend;
+            color: $text-gold;
             text-decoration: none;
           }
-        }
-      }
-    }
-    .buttons {
-      display: flex;
-      align-items: center;
-      .register-btn {
-        display: none; ///
-        font-family: $font-lexend;
-        color: $text-gold;
-        text-decoration: none;
-      }
-
-      .login-btn {
-        display: none; ///
-        &.btn {
-          box-shadow: none;
-          span {
+          .login-btn {
+            font-family: $font-lexend;
             color: $text-gold;
+            text-decoration: none;
+            @include tablet-large {
+              padding: 20px 30px;
+              border-radius: 8px;
+              border: 1px solid #fff !important;
+            }
           }
         }
       }
-
-      .burger-menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        img {
-          width: 32px;
-          height: 32px;
-        }
+    }
+    .burger-menu {
+      align-self: flex-start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      @include tablet-large {
+        display: none;
+      }
+      img {
+        width: 32px;
+        height: 32px;
       }
     }
   }

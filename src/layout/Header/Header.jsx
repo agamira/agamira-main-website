@@ -1,24 +1,48 @@
 import "./Header.scss";
 import burgerBtn from "../../assets/icons/burger-menu.svg";
 import { Link } from "react-router-dom";
-import { Button, Logo } from "../../components";
+import { Logo } from "../../components";
+import { useState } from "react";
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 const Header = () => {
+  const matches = useMediaQuery("(min-width: 1000px)");
+  const [burgerMenu, setBurgerMenu] = useState(matches);
   return (
     <header>
       <div className="box">
-        <Logo />
-        <nav>
-          <ul>
-            <li></li>
-          </ul>
-        </nav>
-        <div className="buttons">
-          <Link className="register-btn">Sign Up</Link>
-          <Button className="login-btn btn btn--outline">Log In</Button>
-          <button className="burger-menu">
-            <img src={burgerBtn} alt={"burger-btn"} />
-          </button>
+        <div className="wrapper">
+          <div className="header-top">
+            <Logo />
+            <button
+              onClick={() => setBurgerMenu((prev) => !prev)}
+              className="burger-menu"
+            >
+              <img src={burgerBtn} alt={"burger-btn"} />
+            </button>
+          </div>
+          {burgerMenu && (
+            <nav>
+              <ul>
+                <li>
+                  <Link>Home</Link>
+                </li>
+                <li>
+                  <Link>Products</Link>
+                </li>
+                <li>
+                  <Link>About Us</Link>
+                </li>
+                <li>
+                  <Link>Contacts</Link>
+                </li>
+              </ul>
+              <div className="buttons">
+                <Link className="register-btn">Sign Up</Link>
+                <Link className="login-btn">Log In</Link>
+              </div>
+            </nav>
+          )}
         </div>
       </div>
     </header>
