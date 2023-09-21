@@ -29,12 +29,15 @@
           right: 0;
           position: absolute;
           mix-blend-mode: lighten;
+          @include laptop {
+            opacity: 0.8;
+          }
         }
       }
       .row {
+        mix-blend-mode: lighten;
         display: flex;
         flex-wrap: wrap;
-        // justify-content: center;
         justify-content: space-between;
         column-gap: 20px;
         row-gap: 28px;

@@ -4,9 +4,13 @@
   background-color: $background-blue;
   padding-bottom: 30px;
   .container {
+    @include laptop {
+      display: flex;
+    }
     .section-content {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       h3 {
         margin-bottom: 16px;
@@ -20,11 +24,20 @@
       .btn {
         margin-bottom: 4px;
       }
+      @include laptop {
+        align-items: flex-start;
+        width: 50%;
+      }
     }
     .section-image {
       img {
         mix-blend-mode: lighten;
         width: 100%;
+        @include laptop {
+          margin-left: 80px;
+          max-width: 770px;
+          min-height: 740px;
+        }
       }
     }
   }

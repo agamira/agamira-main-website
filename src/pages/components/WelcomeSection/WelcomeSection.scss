@@ -10,6 +10,7 @@
       align-items: center;
       .section-title {
         min-width: 448px;
+        max-width: 525px;
         p {
           margin-bottom: 20px;
         }
@@ -32,7 +33,6 @@
             margin: 0 !important;
             margin-left: 3px !important;
             left: 30% !important;
-            font-size: 24px !important;
           }
           .mira-image {
             margin: 0 !important;
@@ -42,6 +42,9 @@
           display: none !important;
         }
       }
+    }
+    @include laptop {
+      justify-content: space-around;
     }
     .section-title {
       h1 {
@@ -70,12 +73,15 @@
         position: relative;
         .logo {
           margin-top: -40px;
-          max-width: 232px;
+          max-width: 232px !important;
           width: 100%;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          @include laptop {
+            max-width: 292px !important;
+          }
         }
         span {
           margin-top: -40px;
@@ -95,11 +101,17 @@
           line-height: normal;
           letter-spacing: 5.756px;
           text-transform: uppercase;
+          @include laptop {
+            font-size: 36px;
+          }
         }
 
         .mira-image {
           margin-left: 78px;
           max-width: 385px;
+          @include laptop {
+            min-width: 500px;
+          }
         }
       }
       .buttons {

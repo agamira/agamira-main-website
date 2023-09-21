@@ -9,7 +9,17 @@ footer {
   .container {
     .box {
       display: flex;
-      justify-content: space-around;
+      gap: 10%;
+      @include tablet {
+        gap: 2%;
+      }
+
+      @include tablet-large {
+        gap: 5%;
+      }
+      @include laptop {
+        gap: 8%;
+      }
       &__form {
         padding: 35px 21px;
         @include tablet {
@@ -47,7 +57,6 @@ footer {
           gap: 16px;
           .list-title {
             color: #8f9bb7;
-            /* T1 */
             font-family: $font-lexend;
             font-size: 16px;
             font-style: normal;
@@ -63,10 +72,17 @@ footer {
               font-style: normal;
               font-weight: 400;
               line-height: 150%; /* 21px */
+              @include tablet-large {
+                font-size: 16px;
+              }
+              @include laptop {
+                font-size: 20px;
+              }
             }
           }
         }
         @include tablet {
+          width: 100%;
           display: flex;
           gap: 10%;
           justify-content: space-between;
@@ -78,9 +94,15 @@ footer {
     border-top: 1px solid #282d45;
     padding: 12px 8px;
     text-align: center;
+    @include tablet-large {
+      padding: 14px;
+    }
     p {
       color: #8f9bb7;
       opacity: 1;
+      @include tablet-large {
+        font-size: 20px;
+      }
       span {
         background: $gradient-purple;
         background-clip: text;
