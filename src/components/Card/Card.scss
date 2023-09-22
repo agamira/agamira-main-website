@@ -18,9 +18,10 @@
   .card-box {
     display: flex;
     flex-direction: column;
+    height: 100%;
     gap: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     &__title {
       h5 {
