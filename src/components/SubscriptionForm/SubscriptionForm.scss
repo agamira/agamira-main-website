@@ -24,6 +24,8 @@
       margin-bottom: 8px;
       @include tablet {
         margin-bottom: 0px;
+        width: unset;
+        padding-right: 110px;
       }
       //
       color: $background-blue;
